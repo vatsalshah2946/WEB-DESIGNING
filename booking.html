@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Table - Saffron Soul </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-utensils me-2"></i>Saffron Soul
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">Book Table</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Booking Hero -->
+    <section class="booking-hero py-5">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold mb-4">Book Your Table</h1>
+            <p class="lead">Reserve your spot for an unforgettable dining experience</p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg border-0 booking-card">
+                        <div class="card-body p-5">
+                            <form id="bookingForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label fw-bold">Full Name *</label>
+                                        <input type="text" class="form-control form-control-lg" id="name" required>
+                                        <div class="invalid-feedback">Please enter your full name</div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label fw-bold">Phone Number *</label>
+                                        <input type="tel" class="form-control form-control-lg" id="phone" required>
+                                        <div class="invalid-feedback">Please enter a valid phone number</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label fw-bold">Date *</label>
+                                        <input type="date" class="form-control form-control-lg" id="date" required>
+                                        <div class="invalid-feedback">Please select a date</div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label fw-bold">Time *</label>
+                                        <select class="form-select form-control-lg" id="time" required>
+                                            <option value="">Choose time...</option>
+                                            <option value="18:00">6:00 PM</option>
+                                            <option value="18:30">6:30 PM</option>
+                                            <option value="19:00">7:00 PM</option>
+                                            <option value="19:30">7:30 PM</option>
+                                            <option value="20:00">8:00 PM</option>
+                                            <option value="20:30">8:30 PM</option>
+                                            <option value="21:00">9:00 PM</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select a time</div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">Number of Guests *</label>
+                                    <select class="form-select form-control-lg" id="guests" required>
+                                        <option value="">Select number...</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7+">7+ People</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select number of guests</div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">Special Requests</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Any special dietary requirements or requests..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold">
+                                    <i class="fas fa-calendar-check me-2"></i>Confirm Booking
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-utensils me-2"></i>Saffron Soul</h5>
+                    <p>Authentic 100% Vegetarian Indian cuisine served with love and tradition since 2015.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="menu.html" class="text-white text-decoration-none">Menu</a></li>
+                        <li><a href="booking.html" class="text-white text-decoration-none">Booking</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-phone me-2"></i>+91 98765 43210</p>
+                    <p><i class="fas fa-envelope me-2"></i>namaste@saffronsoul.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>123 Saffron Street, Culinary Hub, India</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2026 Saffron Soul. All rights reserved. | Pure Veg Delight | Crafted with <i class="fas fa-heart text-danger"></i> for food lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
